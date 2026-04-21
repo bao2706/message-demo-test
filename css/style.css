@@ -1,0 +1,84 @@
+/* Reset để căn giữa chuẩn */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f2f5; /* Màu nền xám nhạt dịu mắt */
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* Căn giữa ngang */
+    align-items: center;     /* Căn giữa dọc */
+    min-height: 100vh;
+}
+
+/* Khung nội dung chính */
+#wrap, #content {
+    background: #ffffff;
+    width: 100%;
+    max-width: 450px;       /* Độ rộng vừa phải */
+    padding: 30px;
+    border-radius: 12px;    /* Bo góc hiện đại */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* Định dạng form */
+dl dt {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+dl dd {
+    margin: 0 0 15px 0;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box; /* Quan trọng để không bị tràn khung */
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.day{
+    font-size: small;
+    color: darkgray;
+}
+form {
+    position: sticky;
+    bottom: 0;
+    background: white;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
